@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SPP | Login</title>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -17,12 +19,16 @@
 <body class="hold-transition login-page">
 <div class="login-box" style="margin-bottom: 20vh;">
   <div class="login-logo">
-    <a href=""><b>SPPR</b></a>
+    {{-- <a href=""><b>SPP</b></a> --}}
   </div>
   <!-- /.login-logo -->
-  <div class="card">
+  <div class="card">  
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Silahkan Login</p>
+      <div class="text-center">
+        <img src="{{ asset('templates/backend/AdminLTE-3.1.0') }}/dist/img/rpl.jpg" class="img-fluid img-circle" alt="Logo" width="150">
+      </div>
+      <br>
+      <p class="login-box-msg"><i><b>Silahkan Login</b></i></p>
       @error('username')
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
           {{ $message }}
@@ -63,6 +69,8 @@
 </div>
 <!-- /.login-box -->
 
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <!-- jQuery -->
 <script src="{{ asset('templates/backend/AdminLTE-3.1.0') }}/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap 4 -->
